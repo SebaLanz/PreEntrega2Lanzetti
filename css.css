@@ -1,0 +1,594 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* Header */
+header{
+    background-color: #b09191 ;
+    height: 80px;   
+}
+
+nav{
+    align-items: center;
+    height: 100%;
+    padding-left: 15px;
+}
+header nav div a {
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav div a:hover{
+    color: #2b2118;
+}
+.sidebar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sidebar h1{
+    margin-bottom: 30px;
+}
+.parrafoBienvenida{
+    padding: 20px;
+    text-align: justify;
+    background-color: #fae5d3;
+    border-radius: 5px;
+    opacity: 0.8;
+    margin: 20px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sidebar{
+    height: 100vh;
+}
+/*fin header */
+/* inicio contenido */
+main{
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.padre2 h1,h2{
+    text-align: center;
+}
+.contenido {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+}
+.card{
+    margin-right: 50px;
+}
+
+.card div a{
+    background-color: #b09191;
+    border:  1px ;
+    color: #2b2118;
+    margin-left: 80px;
+    width: 100px;
+    transition: 0.7s;
+}
+.card div a:hover{
+    background-color: #cd6b6b;
+   
+}
+
+/* fin contenido */
+/* aside */
+aside {
+    float: left;
+    width: 150px;
+    background-color: rgb(158, 72, 72);
+    height: calc(100vh - 10vh);
+  }
+/* fin aside */
+
+/* footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 70px; /* Altura del footer */
+    background-color: #b09191;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    z-index: 2;
+}
+/*Contenedor de los items en el footer*/
+.caja_footer1{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.caja_footer1 a i{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+}
+.caja_footer1 a i:hover{
+    color: #7569df;
+    transition: 0.6s;
+}
+
+
+/*PÁGINA PASTAS*/
+
+.main_pasta{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 100px;   
+}
+
+.contenedor_pasta{
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 100%;
+    height: calc(100vh -100px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo_pasta logo_pasta  carta_01 carta_02"
+                         "logo_pasta logo_pasta  carta_01 carta_02"
+                         "logo_pasta logo_pasta  carta_03 carta_04"
+                         "logo_pasta logo_pasta  carta_03 carta_04";
+    margin-top: 10px;
+
+}
+.logo_pasta{
+    grid-area: logo_pasta;
+}
+.logo_pasta img{
+    background-position: center;
+    background-size:cover;
+    margin-bottom: 10px;
+    margin-left: 5px;   
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    margin-left: 5px;
+    height: 400px;
+    padding: 20px;
+}
+.card img{
+    height: 300px
+}
+.carta_01{
+    grid-area: carta_01;
+}
+.carta_02{
+    grid-area: carta_02;
+}
+.carta_03{
+    grid-area: carta_03;
+}
+.carta_04{
+    grid-area: carta_04;
+}
+
+@media only screen and (max-width:1500px){
+    .logo_pasta{
+        display: none;
+    }
+
+      /*Pastas*/
+      .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  1fr 1fr ;
+        grid-template-areas: "carta_01 carta_02"
+                             "carta_03 carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+}
+
+@media only screen and (max-width:768px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 140px;
+    }
+
+     /*Pastas*/
+     .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  1fr 1fr ;
+        grid-template-areas: "carta_01 carta_02"
+                             "carta_03 carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: 400px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+    .contenido .card img{
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width:650px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 170px;
+    }
+    .contenido .card img{
+        width: 250px;
+    }
+
+
+
+
+     /*Pastas*/
+     .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  1fr 1fr ;
+        grid-template-areas: "carta_01 carta_02"
+                             "carta_03 carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: 400px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 140px;
+    }
+    .contenido .card img{
+        width: 250px;
+    }
+
+     /*Pastas*/
+     .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  1fr 1fr ;
+        grid-template-areas: "carta_01 carta_02"
+                             "carta_03 carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: 400px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+
+}
+
+
+@media only screen and (max-width:550px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 125px;
+    }
+    .contenido .card img{
+        width: 250px;
+    }
+
+     /*Pastas*/
+     .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo_pasta carta_01"
+                             "logo_pasta carta_02"
+                             "logo_pasta carta_03"
+                             "logo_pasta carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+    .carta_04{
+        padding-bottom: 45px;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 100px;
+    }
+
+    .contenido .card img{
+        width: 250px;
+    }
+
+       /*Pastas*/
+       .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo_pasta carta_01"
+                             "logo_pasta carta_02"
+                             "logo_pasta carta_03"
+                             "logo_pasta carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+    .carta_04{
+        padding-bottom: 45px;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 80px;
+    }
+
+    .contenido .card img{
+        width: 250px;
+    }
+
+
+       /*Pastas*/
+       .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo_pasta carta_01"
+                             "logo_pasta carta_02"
+                             "logo_pasta carta_03"
+                             "logo_pasta carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+    .carta_04{
+        padding-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .contenido{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "c1"
+            "c2"
+            "c3";
+        margin-left: 30px;
+    }
+    .contenido .card img{
+        width: 250px;
+    }
+
+    /*Pastas*/
+    .contenedor_pasta{
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 100%;
+        height: calc(100vh );
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo_pasta carta_01"
+                             "logo_pasta carta_02"
+                             "logo_pasta carta_03"
+                             "logo_pasta carta_04";
+        margin-top: 10px;
+        padding-left: 50px;
+        
+    }
+    .main_pasta{
+        background-color: #fff;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .logo_pasta{
+        display: none;
+    }
+
+    .card{
+        border-radius: 15px;
+        width: 200px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .card img{
+      height: 200px;
+      width: 300px;
+      padding: 5px;
+    }
+    .carta_04{
+        padding-bottom: 45px;
+    }
+}
