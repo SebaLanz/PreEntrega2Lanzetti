@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INICIO BODY GRIDS*/
+.contenedor{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "... caja1 caja2 caja3 ..."
+        "... caja4 caja5 caja6 ..."
+        "... caja7 caja8 caja9 ..."
+        ;
+    margin-top: 25px;
+    margin-bottom: 350px;
+    gap: 40px 20px; /*genero espacio entro las cajas*/
+    
+    
+}
+
+.caja{
+    border: solid 0.5px black;
+}
+
+/*Declaro las cajas-cointeiner, si no hago esto no funciona el atributo de grid declarado en contenedor*/
+.caja1{
+    grid-area: caja1;
+}
+.caja2{
+    grid-area: caja2;
+}
+.caja3{
+    grid-area: caja3;
+}
+.caja4{
+    grid-area: caja4;
+}
+.caja5{
+    grid-area: caja5;
+}
+.caja6{
+    grid-area: caja6;
+}
+.caja7{
+    grid-area: caja7;
+}
+.caja8{
+    grid-area: caja8;
+}
+.caja9{
+    grid-area: caja9;
+}
+
+/*Convierto los elementos dentro del contenedor en GRID*/
+.contenedor > div{
+    display: grid;
+    place-items: center;
+}
+/*FIN BODY GRIDS*/
+
+/*Inicio Tarjetas*/
+.tarjeta{
+    background-color: rgb(255, 255, 255);
+}
+.tarjeta img{
+    width: 100%;
+  
+}
+
+
+/*Fin tarjetas*/
+
+footer{
+    
+}
