@@ -10,21 +10,52 @@
     width: 100%;
     height: 100vh;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
+        "... caja0 caja0 caja0 ..."
         "... caja1 caja2 caja3 ..."
         "... caja4 caja5 caja6 ..."
         "... caja7 caja8 caja9 ..."
+        "... caja10 caja10 caja10 ..."
         ;
-    margin-top: 25px;
-    margin-bottom: 350px;
+     /*margin-top: 25px;*/
+    /*margin-bottom: 350px;*/
     gap: 40px 20px; /*genero espacio entro las cajas*/
-    
-    
 }
 
+/*Estilos general para todas las cajas*/
 .caja{
-    border: solid 0.5px black;
+    display:flex;
+    justify-content:space-between;
+    width:350px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    border-radius: 55px 55px 0 0;
+}
+.caja h4{
+    color: rgb(12, 6, 6);
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.caja p{
+    padding: 15px 10px 5px 5px;
+    text-align: justify;
+}
+.caja img{
+  background-size:auto;  
+  height: 220px;
+  width: 350px;
+  border-radius: 15px 15px 0 0;
+}
+.caja button{
+    background-color: red;
+    margin-left: 82px;
+    margin-bottom: 25px;
 }
 
 /*Declaro las cajas-cointeiner, si no hago esto no funciona el atributo de grid declarado en contenedor*/
@@ -56,6 +87,20 @@
     grid-area: caja9;
 }
 
+/*Caja 0 y 10. Son cajas sin contenido para crear un responsive entre el header y el footer*/
+.caja0{
+    grid-area: caja0;
+    height: 20px;
+    border: none;
+    box-shadow: none;
+}
+.caja10{
+    grid-area: caja10;
+    height: 100px;
+    border: none;
+    box-shadow: none;
+}
+
 /*Convierto los elementos dentro del contenedor en GRID*/
 .contenedor > div{
     display: grid;
@@ -69,12 +114,7 @@
 }
 .tarjeta img{
     width: 100%;
-  
 }
 
 
 /*Fin tarjetas*/
-
-footer{
-    
-}
