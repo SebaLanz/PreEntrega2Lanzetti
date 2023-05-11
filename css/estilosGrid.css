@@ -53,9 +53,19 @@
   border-radius: 15px 15px 0 0;
 }
 .caja button{
-    background-color: red;
+    background-color: #e27070;
+    border: 2px;
     margin-left: 82px;
     margin-bottom: 25px;
+    transition: 0.7s;
+}
+.caja button:hover{
+    background-color: #88a71681;
+    color: rgb(56, 55, 55);
+    transition: 0.7s;
+}
+h5{
+    font-weight: bold;
 }
 
 /*Declaro las cajas-cointeiner, si no hago esto no funciona el atributo de grid declarado en contenedor*/
