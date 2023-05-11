@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css.css">
+    <link rel="shortcut icon" href="../img/pastas/pastaIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilosGrid.css">
+    <title>Pastas</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./receta_pasta.html">Pastas</a></li>
+                      <li><a class="dropdown-item" href="./receta_carne.html">Carnes</a></li>
+                      <li><a class="dropdown-item" href="./receta_vegetal.html">Ensaladas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>         
+    </header>
+    <!--Fin header-->
+
+    <!--Inicio main-->
+
+    <main class="main_pasta">
+      <div class="contenedor">
+        <div class="caja caja0"></div><!--Caja sin contenido. INVISIBLE-->
+        <div class="caja caja1">
+          <div class="tarjeta">
+            <img class="tarjeta_img1" src="../img/vegetales/1aros_cebolla.jpg" alt="Carne1">
+            <h4>Aros de cebolla</h4>
+            <p>Son una de las comidas fritas que más encantan a los más pequeños (y también a muchos de los no tan pequeños, entre los que me incluyo) y que se suele servir en los propios establecimientos de comida rapida. </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver Instrucciones.
+            </button>
+            
+          </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">                       
+                      <h4>Ingredientes</h4><br>
+                      <ul>
+                        <li>2 cebollas medianas.</li>
+                        <li>250g de harina.</li>
+                        <li>Unos 300ml de agua.</li>
+                        <li>Una cucharadita de pimentón dulce.</li>
+                        <li>1 cucharada de levadura química, tipo Royal.</li>
+                        <li>Pan rallado.</li>
+                        <li>Sal.</li>
+                        <li>Aceite de oliva.</li>
+                      </ul>
+                      <h4>Preparación</h4><br>
+                      <ol>
+                            <li>Pelamos la cebolla y quitamos la primera capa que, es un poco durita. La cortamos en rodajas finas, de abajo a arriba de la cebolla y de 1cm de grosor, para que queden en forma de aro.</li><br>
+                            <li>Después, separamos con los dedos las diferentes capas de la cebolla para conseguir los aritos
+                            </li><br>
+                            <li>Metemos los aros de cebolla en agua fría durante unos 30 minutos. Desechamos aquellas partes que no hayan conservado su forma redonda o que sean demasiado pequeñas para hacer aros de cebolla con ellas (En la cocina, nunca tiramos nada. Estos restos sirven para otra elaboración).</li><br>
+                            <li>En un bol amplio mezclamos la harina, una cucharada de levadura química, agua bien fría, una cucharadita de sal, otra de pimentón y mezclamos todo bien con un tenedor hasta que quede una especie de crema, sin grumos. Tiene que quedar con cierto espesor pero más bien líquido.</li><br>
+                            <li>Escurrimos los aros de cebolla del agua, les echamos una pizquita de sal y los metemos en la mezcla, asegurándonos de que se impregnen bien de ella. Les retiramos el exceso de masa y los pasamos por pan rallado. Reservamos en un plato y seguimos haciendo más aros de cebolla, hasta acabar con todos.</li><br>
+                            <li>Los freímos a fuego fuerte en abundante aceite de oliva. Pasados unos 30 segundos, los retiramos, dejando que reposen sobre una rejilla para escurrir el exceso de aceite sin que se ablanden. Así quedarán crujientes. ¡Y ya tienes tu plato casero, típico de restaurante de comida rapida hecho!</li><br>
+                      </ol>
+                    </p>                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN Modal -->
+    </div>
+    <div class="caja caja2">
+        <div class="tarjeta">
+            <img class="tarjeta_img1" src="../img/vegetales/2garbanzos.jpg" alt="Carne2">
+            <h4>Garbanzos</h4>
+            <p>Garbanzos con espinacas es una de esas recetas completísimas. Especialmente en los días de invierno, se puede comer durante todo el año. Un plato caliente, nutritivo, lleno de las proteínas de los garbanzos.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+               Ver Instrucciones.
+            </button>
+          </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Ingredientes</h4><br>
+                    <ul>
+                      <li>400g de garbanzos.</li>
+                      <li>500g de espinacas.</li>
+                      <li>1/2 cebolla.</li>
+                      <li>2 dientes de ajo.</li>
+                      <li>1 cucharadita de pimentón dulce.</li>
+                      <li>1 pizca de comino.</li>
+                      <li>sal y pimienta.</li>
+                      <li>Aceite de oliva.</li>
+                    </ul>
+                    <h4>Preparación</h4><br>
+                      <ol>
+                            <li>La noche anterior, ponemos los garbanzos en remojo. Y lo hacemos con abundante agua, que los cubra más que de sobra. Al menos con dos dedos por encima ya que los garbanzos crecerán y absorberán bastante agua. Añadimos una cucharadita de bicarbonato o un puñadito de sal y lo dejamos toda la noche.</li><br>
+                            <li>Al día siguiente, los escurrimos del agua y los introducimos en una olla. Los cubrimos nuevamente con más agua fresca. Lo tampamos y dejamos cocinar alrededor de 2 o 3 horas dependiendo el tipo de garbanzo, hasta que estén blandos. Si utilizas una olla express, su tiempo se reduce, en 30 minutos, más o menos estarán listos.
+                            </li><br>
+                            <li>Mientras se cocinan, preparamos el sofrito que va a acompañar a nuestros garbanzos con espinacas. En una cazuela ponemos un chorrito de aceite y lo vamos a calentar a fuego muy suave. Cuando esté caliente, añadimos los dientes de ajo bien picados. Dejamos que se cocinen aquí arededor de unos 2 minutos.</li><br>
+                            <li>A continuación, agregamos la cebolla también bien picada y salpimentamos. Removemos todos los ingredientes y dejamos que se cocine unos 10 minutos manteniendo el fuego suave.</li><br>
+                            <li>Hecho esto, agregamos las espinacas. Subimos la potencia del fuego y removemos con frecuencia. Cuando la espinaca haya reducido su tamaño, añadimos una cucharadita de pimentón y una pizca de comino molido. Mezclamos todo brevemente y cuando los garbanzos ya estén cocidos, los agregamos junto con el agua de la cocción a esta elaboración. Mezclamos nuevamente, rectificamos de sal, tapamos y dejamos que se cocine unos 20 minutos. Servimos.</li>
+                      </ol>
+                    </p>                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN Modal -->
+              </div>
+              <div class="caja caja3">
+                  <div class="tarjeta">
+                      <img class="tarjeta_img1" src="../img/vegetales/3pastel_verdura.jpg" alt="Carne1">
+                      <h4>Pastel de verdura</h4>
+                      <p>Preparar este pastel de verduras es algo sencillo, no necesitas muchos ingredientes. Y puedes cambiar las verduras según tu gusto o estación del año. Una versión muy rica y fácil de hacer en casa, es la siguiente: </p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Ver Instrucciones.
+                      </button>
+                    </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h4>Ingredientes</h4><br>
+                                <ul>
+                                  <li>5 huevos.</li>
+                                  <li>1/2 cebolla.</li>
+                                  <li>250ml de nata para cocinar (crema de leche).</li>
+                                  <li>1 pimiento rojo.</li>
+                                  <li>2 zanahorias.</li>
+                                  <li>150g de guisantes.</li>
+                                  <li>150g de alubias verdes.</li>
+                                  <li>Sal y pimienta.</li>
+                                  <li>aceite.</li>
+                                <h4>Preparación</h4><br>
+                                <ol>
+                                  <li>Cocemos los guisantes y las alubias verdes. Para ello ponemos a cocer abundante agua en una ollita y le echamos una pizca de sal. Cuando esté en ebullición, echamos ambos ingrediente y dejamos cocer 10 minutos. Pasado el tiempo, los escurrimos del agua y dejamos reposar.</li><br>
+                                  <li>Mientras tanto, continuamos con la elaboración de nuestro pastel de verduras al horno. Ponemos un chorrito de aceite a calentar a fuego suave. Añadimos primero la zanahoria cortada en tacos. Ponemos una pizca de sal y dejamos cocinar 5 minutos, mientras removemos con una cuchara.
+                                  </li><br>
+                                  <li>Pasado el tiempo añadimos la cebolla y el pimiento rojo también en tacos. Añadimos esta verdura más tarde porque la zanahoria es bastante más dura. Salpimentamos y cocinamos unos 10 minutos más, mientras removemos de vez en cuando.</li><br>
+                                  <li>Hecho todo esto, ponemos los huevos en un bol. Añadimos su parte de sal y pimienta y batimos. Después añadimos la nata para cocinar y mezclamos con los huevos. Hecho esto, añadimos todas las verduras, que ya no estarán demasiado calientes, para que no cuajen el huevo y volvemos a mezclar nuevamente.<br></li><br>
+                                  <li>Ponemos esta mezcla de nuestro pastel de verduras al horno en un molde. Uno con el que hagas tus bizcochos será suficiente. Si es de silicona mejor. Si es metálico también te valdrá pero no olvides untarlo de aceite para que no se pegue después.</li><br>    
+                                  <li>Finalmente metemos en el horno previamente calentado a 160ºC. Dejamos cocinar aquí unos 45 minutos, hasta que puedas meter un cuchillo y éste salga limpio.</li><br>                     
+                            </ol>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN Modal -->
+              </div>
+              <div class="caja caja4">
+                  <div class="tarjeta">
+                      <img class="tarjeta_img1" src="../img/vegetales/4porrusalda.jpg" alt="Carne1">
+                      <h4>Porrusalda</h4>
+                      <p>La Gastronomía vasca. La purrusalda o porrusalda, es un plato típicamente vasco que, en su receta original, tiene tan sólo puerro y patata. Además es muy rápido y fácil de hacer. Veamos cómo hacer una porrusalda vasca</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        Ver Instrucciones.
+                      </button>
+                    </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h4>Ingredientes</h4><br>
+                                <ul>
+                                  <li>2 puerros grandes.</li>
+                                  <li>4 patatas medianas.</li>
+                                  <li>Agua.</li>
+                                  <li>sal y pimienta negra.</li>
+                                  <li>aceite de oliva.</li>
+                                </ul>
+                                
+                                <h4>Preparación</h4><br>
+                                  <ol>
+                                      <li>Pelamos y limpiamos el puerro y la patata. Después las cortamos en trozos grandecitos.
+                                      </li><br>
+                                      <li>Echamos un chorro de aceite de oliva en una cazuela alta. Lo ponemos a fuego medio-alto y agregamos la patata y el puerro. Salpimentamos y los cocinamos aquí durante un minuto, removiendo constantemente.</li><br>
+                                      <li>A continuación, añadimos agua hasta que cubra, aproximadamente un dedo o dos por encima de la verdura. </li><br>
+                                      <li>Llevamos a ebullición nuestra porrusalda y, dejamos cocinar a fuego medio durante unos 20 minutos. Hasta que la verdurá esté blandita. Recitificamos de sal y pimienta. Servimos.</li><br>                
+                                  </ol>               
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN Modal -->
+              </div>
+              <div class="caja caja5">
+                <div class="tarjeta">
+                    <img class="tarjeta_img1" src="../img/vegetales/5hamburguesa_lenteja.jpg" alt="Carne1">
+                    <h4>Hamburguesa </h4>
+                    <p> esta hamburguesa de lentejas y arroz en concreto, además de ser vegetariana, también es vegana, pues para su realización, tan sólo necesitaremos de algunas verduras, además de las lentejas y el arroz pero, nada de huevo.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                       Ver Instrucciones.
+                    </button>
+                  </div>
+                        <!-- Modal -->
+                      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <h4>Ingredientes</h4><br>
+                                  <ul>
+                                    <li>100g de lentejas.</li>
+                                    <li>100g de arroz redondo o largo.</li>
+                                    <li>1 cebolla.</li>
+                                    <li>1 zanahoria.</li>
+                                    <li>Un diente de ajo.</li>
+                                    <li>1 cucharada de pimentón.</li>
+                                    <li>50g de pan rallado.</li>
+                                    <li>Perejil fresco.</li>
+                                    <li>1 hoja de laurel.</li>
+                                    <li>Sal y pimienta.</li>
+                                    <li>Aceite de oliva.</li>
+                                  </ul>
+                                  <h4>Preparación</h4><br>
+                                  <ol>
+                                    <li>Cocemos las lentejas. Importante, que al final queden con un poco de caldo. Para ello, las ponemos en una cazuela, junto con la cebolla cortada en finas tiras, la zanahoria cortada en cubos, el pimentón, un chorrete de aceite y la hoja de laurel. Cubrimos con agua, mezclamos y dejamos cocer hasta que estén blandas. En torno de 30 minutos a 1 hora, dependiendo de la variedad de lenteja. Es importante señalar que es mejor no pasarse de agua pues, queremos que la lenteja esté blanda, pero muy espesa. Añade de menos y si ves que le falta más, ve añadiendo poco a poco más agua durante la cocción.</li><br>
+                                    <li>Hacemos lo propio con el arroz de nuestra hamburguesa de lentejas y arroz. En otra cazuela, ponemos un chorrito de aceite a calentar a fuego medio. Cuando esté caliente añadimos el diente de ajo y esperamos a que se dore. Hecho esto, agregamos el arroz y mezclamos todo brevemente. Luego vertemos agua (doble de cantidad que de arroz) y dejamos cocer a fuego medio unos 20 minutos. Hasta que el arroz quede suave.</li><br>
+                                    <li>Ponemos el arroz y las lentejas, ya cocidos y sin la hoja de laurel, en un bol. Añadimos aquí una pizca de sal y de pimienta, un puñado de perejil picado y el pan rallado. Mezclamos todo hasta que todos los ingredientes de nuestra hamburguesa de lentejas y arroz queden bien integrados.</li><br>
+                                    <li>Una vez bien mezclada la masa, cogemos una pequeña porción con las manos y le damos forma de hamburguesa. Puedes humedecerte un poco las manos para ayudarte en este proceso. Hecho esto, la introducimos en una plancha, con un chorrito de aceite y cocinamos bien por ambas caras. Es mejor hacerlas en muy pocas tandas, para asegurarnos que no se deshacen a la hora de darles la vuelta.</li><br>
+                                    <li>Puedes acompañarla en un pan para hamburguesa, junto con lechuga, tomate, cebolla y un poco de kétchup. O junto a tus ingredientes favoritos.</li><br>                                
+                                </ol>   
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>                   
+                        </div>     
+                   </div>
+                   <div class="caja caja6">
+                    <div class="tarjeta">
+                        <img class="tarjeta_img1" src="../img/vegetales/6ensalada_lenteja.jpg" alt="Carne1">
+                        <h4>Ensalada de lentejas</h4>
+                        <p>Una receta de verano muy curiosa, tratándose de una ensalada hecha con esta legumbre. En realidad queda deliciosa. Para hacerla, necesitaremos unos ingredientes estándar en una receta de ensalada, además de lentejas.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                           Ver Instrucciones.
+                        </button>
+                      </div>
+                            <!-- Modal -->
+                          <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable ">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      
+                                      <h4>Ingredientes</h4><br>
+                                      <ul>
+                                        <li>400g de lentejas cocidas.</li>
+                                        <li>1/2 pimiento verde.</li>
+                                        <li>1/2 pimiento rojo.</li>
+                                        <li>1 cebolleta.</li>
+                                        <li>1 zanahoria.</li>
+                                        <li>aceite de oliva.</li>
+                                      </ul>
+                                      <h4>Preparación</h4><br>
+                                      <ol>
+                                        <li>En un bol, ponemos las lentejas -que ya estarán previamente cocidas-. Para cocerlas, tan solo ponlas en agua con un poco de sal. no hace falta añadirle nada más. Dejamos que se cocinen alrededor de unos 20 minutos dependiendo del tipo de lenteja.</li><br>
+                                        <li>Añadimos el resto de ingredientes y mezclamos. Además de los ingredientes sugeridos, puedes añadir atún, palitos de cangrejo, huevo cocido… Lo que quieras.</li><br>
+                                        <li>Aliñamos con un poco de aceite de oliva. Yo considero que con aceite como aliño, es más que suficiente. pero puedes añadir también vinagre balsámico si lo deseas a nuestra ensalada de lentejas.</li><br>
+                                    </ol>   
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>                   
+                            </div>     
+                       </div>                               
+    <div class="caja caja10"></div><!--Caja sin contenido. INVISIBLE-->
+      </div>
+    </main>
+
+
+
+
+
+
+
+    <!--Fin main-->
+
+<!--Inicio footer-->
+<footer>
+    <div class="caja_footer1">
+        <h4>Derechos Reservados 2023</h4>
+        <a href="https://www.linkedin.com/in/sebastian-lanzetti/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/SebaLanz"><i class="fa-brands fa-github"></i></a>
+        
+    </div>
+</footer>
+<!--Fin footer-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
