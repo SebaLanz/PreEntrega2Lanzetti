@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css.css">
+    <link rel="shortcut icon" href="../img/pastas/pastaIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilosGrid.css">
     <title>Pastas</title>
 </head>
 <body>
@@ -39,74 +41,326 @@
     <!--Inicio main-->
 
     <main class="main_pasta">
-        <div class="contenedor_pasta">
-            <div class="logo_pasta">
-              <img src="../img/pastas_gral.jpg" alt="">
-            </div>
-            <div class="card mb-3 carta_01"  style="max-width: 100%;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../img/pastas_agnolotis.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Agnolotis</h5>
-                      <p class="card-text">Agnolotis caseros de pollo y queso crema.</p>
-                      <p class="card-text"><small class="text-muted">Publicada el 25/01/2020</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Carta 2-->
-              <div class="card mb-3 carta_02" style="max-width: 95%;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../img/pastas_fideos.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Fideos</h5>
-                      <p class="card-text">Fideos con albahaca y tomates secos.</p>
-                      <p class="card-text"><small class="text-muted">Publicada el 20/04/2022</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Carta 3-->
-              <div class="card mb-3 carta_03" style="max-width: 95%;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../img/pastas_pizza.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Pizza</h5>
-                      <p class="card-text">Pizza casera de muzzarela con rodajas de tomate cherry.</p>
-                      <p class="card-text"><small class="text-muted">Publicada el 20/07/2021</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Carta 4-->
-              <div class="card mb-3 carta_04" style="max-width: 95%;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../img/pastas_ñoquis.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Ñoquis</h5>
-                      <p class="card-text">Ñoquis de papa con salsa blanca en 10 minutos!.</p>
-                      <p class="card-text"><small class="text-muted">Publicada el 20/04/2023</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--Carta 1-->
+      <div class="contenedor">
+        <div class="caja caja0"></div><!--Caja sin contenido. INVISIBLE-->
+        <div class="caja caja1">
+          <div class="tarjeta">
+            <img class="tarjeta_img1" src="../img/pastas/1pasta.jpg" alt="Carne1">
+            <h4>Fideos con salsa roja</h4>
+            <p>Carne guisada con mucho queso. Salteada con coloridos pimientos y cebolla.
+               Además, es excelente para sacarte de apuros cualquier día en casa</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver Instrucciones.
+            </button>
             
-              <!--Fin cartas-->
-        </div>
-
+          </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">                       
+                      <h4>Ingredientes</h4>
+                      <ul>
+                        <li>300 gram de filete de res</li>
+                        <li>1 cucharada sopera de aceite vegetal</li>
+                        <li>½ cebolla picada en juliana o tiras</li>
+                        <li>1 pimiento verde </li>
+                        <li>1 pimiento rojo </li>
+                        <li>1 pimiento amarillo</li>
+                        <li>Sal a gusto</li>
+                        <li>300 gam de queso a derretir</li>
+                        <li>Tortillas</li>
+                      </ul>
+                      <h4>Preparación</h4>
+                      <ol>
+                            <li>En una sartén u olla calienta el aceite y sofríe la cebolla picada, mueve constantemente hasta que la cebolla comience a ponerse transparente y se dore un poco.<br></li>
+                            <li>Cuando la cebolla esté dorada, agrega la carne de res en trozos y sazona con un poco de sal y pimienta al gusto.
+                            <br></li>
+                            <li>Mientras se cocina la carne, limpia los pimientos y córtalos en bastones, en julianas o en cuadritos, como más te guste. Puedes usar el pimiento que más te guste. <br></li>
+                            <li>Cuando la carne ya se vea dorada en ciertas partes, es momento de agregar los pimientos cortados, mezcla para integrar los sabores y sazona con un poco más de sal y pimienta al gusto. Deja que se cocine todo por 8 o 10 minutos. <br></li>
+                            <li>Por último, agrega el quesillo para que se funda con toda la carne. Te recomendamos utilizar un queso que se derrita fácil, también puedes elegir queso chihuahua o gouda.</li>
+                      </ol>
+                    </p>                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN Modal -->
+    </div>
+    <div class="caja caja2">
+        <div class="tarjeta">
+            <img class="tarjeta_img1" src="../img/pastas/2pastas_agnolotis.jpg" alt="Carne2">
+            <h4>Agnolotis caseros</h4>
+            <p>Receta para realizar Asado de tira, vacío, tapa <br>
+                 de asado, entraña, colita de cuadril, matambre, falda parrillera  o si tenés algún corte que te guste lo incluís</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+               Ver Instrucciones.
+            </button>
+          </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                      <li>2 kg carne</li>
+                      <li>4 morcillas bombón</li>
+                      <li>4 chorizos de cerdo </li>
+                      <li>2 riñones</li>
+                      <li>2kg de chinchulinín</li>
+                    </ul>
+                    <h4>Preparación</h4>
+                    Preparación</h4>
+                      <ol>
+                            <li>Quitárle la grasita al riñón y a los chinchulines, al riñón lo abrís en forma transversal por el medio , a los chunchlines los cortás y unís las puntas con un palillo enrroscando. Colocárlos en un bol y dejárlos una hora en vinagre.<br></li>
+                            <li>Mientras vamos prendiendo el fuego (tener en cuenta que se calcula 1 kg. de carbón por kg. de carne).
+                            <br></li>
+                            <li>Colocar la carne en una fuente y salarla.<br></li>
+                            <li>Los chorizos ponérlos en agua.<br></li>
+                            <li>Esparcir en forma pareja las brasas debajo de la parrilla.</li>
+                            <li>Colocar la tira de asado cocinar del lado de el hueso el hueso, y los otros cortes del lado que tienen grasa, el pollo también de espalda,y el resto de las achuras sobre la parrilla(mas en los bordes porque se cocinan primero). <br></li>
+                            <li>Dar vuelta la carne cuando empieza a largar jugo. el pollo también , y no descuidar las achuras (la morcilla se pone en la parrilla recién cuando damos vuelta la carne).<br></li>
+                            <li>La cocción va a GUSTO!!!!</li>
+                      </ol>
+                    </p>                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN Modal -->
+              </div>
+              <div class="caja caja3">
+                  <div class="tarjeta">
+                      <img class="tarjeta_img1" src="../img/pastas/3pastas_ñoquis.jpg" alt="Carne1">
+                      <h4>Ñoquis.</h4>
+                      <p>La comida ensartada es tan práctica como atractiva para cocinar, servir y devorar. Brochetas y pinchos tienen ese algo especial que relacionamos con fiestas o juntadas.</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Ver Instrucciones.
+                      </button>
+                    </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                  <li>Carne de cordero en trozos en trozos o cerdo, o ternera, o pollo</li>
+                                  <li>4 Diente de ajo pelados</li>
+                                  <li>1 Cebolla blanca o cebolleta</li>
+                                  <li>30 jugo de limón y un poco de su ralladura</li>
+                                  <li>4  Pimentón picante 1 cucharada
+                                      Pimentón dulce 2 y 1/2 cucharadas
+                                      Comino en grano 1 cucharada
+                                      Azafrán (hebras)</li>
+                                  <li> Pimienta negra molida
+                                      Canela molida 1 pizca
+                                      Cilantro fresco 1 manojo (o perejil)
+                                      Sal 1 cucharadita
+                                      Aceite de oliva virgen extra (aproximadamente)</li>
+                                </ul>
+                                <h4>Preparación</h4>
+                                <ol>
+                                  <li>carne ya cortada en tacos de unos 2-3 cm.<br></li>
+                                  <li>Lavar el limón y el cilantro. Pelar los ajos y la cebolla y trocear ligeramente.
+                                      triturar estos ingredientes con el zumo de limón y parte de ralladura, y las hojas del cilantro.<br>
+                                  </li>
+                                  <li>Añadir las especias, la sal y casi todo el aceite, y triturar un poco más hasta tener una pasta, pero que no quede todo diluido. Si no se tiene robot, majar a mortero el comino con el azafrán y aparte los ajos; picar fina la cebolla y el cilantro a cuchillo.<br></li>
+                                  <li>Echar la carne en una bolsa de congelación grande con cierre zip y verter el adobo. Si estuviera demasiado denso, añadir más aceite. Cerrar bien sacando todo el aire posible y masajear la carne para impregnarla de forma homogénea con la mezcla. Dejar en la nevera como mínimo 8 horas, mejor 12.<br></li>
+                                  <li>A la hora de cocinar, preparar los pinchos con brochetas de madera o metálicas. Cocinar en una plancha muy caliente, dándoles la vuelta, hasta que estén bien dorados.</li>                           
+                            </ol>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN Modal -->
+              </div>
+              <div class="caja caja4">
+                  <div class="tarjeta">
+                      <img class="tarjeta_img1" src="../img/pastas/4pastas_pizza.jpg" alt="Carne1">
+                      <h4>Pizza</h4>
+                      <p>La nalga se caracteriza por cortes grandes de una sola pieza. La bola de lomo, si bien es muy jugosa, como está compuesta por dos músculos, sucede que si se la corta muy fina a veces se desarma un poco. </p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        Ver Instrucciones.
+                      </button>
+                    </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h4>Ingredientes</h4><br>
+                                <ul>
+                                  <li>8 milanesas pequeñas (yo las hice de cuadrada, pero puede ser lomo, bola de lomo, peceto, etc.)</li>
+                                  <li>Pan rallado (yo utilicé panko porque soy muy chic)</li>
+                                  <li>2 huevos</li>
+                                  <li>1 cda. de mostaza de Dijon</li>
+                                  <li>Jugo y ralladura de 1 limón</li>
+                                  <li>1 diente de ajo</li>
+                                  <li>Perejil picado</li>
+                                  <li>1 cda. de queso rallado</li>
+                                  <li>Sal y pimienta</li>
+                                </ul>
+                                <h4>Preparación</h4>
+                                  <ol>
+                                      <li>Lo primero que vamos a hacer es batir los huevos y agregar dentro todos los ingredientes de la marinada. Vamos a mezclar todo bien.<br></li>
+                                      <li>Siguiente: Vamos a salar las milanesas y colocarlas dentro de la marinada, tienen que quedar bien embebidas. Las vamos a tapar con papel film y las vamos a llevar a la heladera mínimo por una hora. Cuanto más, mejor. <br>
+                                      </li>
+                                      <li>Pasado ese tiempo, vamos a sacarlas de la heladera. Luego, milanesa por milanesa,, vamos a empanarlas con el pan rallado, presionando de ambos lados hasta que las recubra bien. <br></li>
+                                      <li>Finalmente, lo que queda es freírlas en aceite bien caliente hasta que estén doradas y disfrutarlas mucho.<br></li>                        
+                                  </ol>               
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN Modal -->
+              </div>
+              <div class="caja caja5">
+                <div class="tarjeta">
+                    <img class="tarjeta_img1" src="../img/pastas/5capelletinis.JPG" alt="Carne1">
+                    <h4>Capeletinis</h4>
+                    <p>Cappelletti casero con un relleno bien simple de Picadillo de Carne y Queso rallado. Si bien es una masa de pasta al huevo, agregamos un poco de agua para alivianar la masa y un poco de aceite que aporta elasticidad y sabor.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                       Ver Instrucciones.
+                    </button>
+                  </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <h4>Ingredientes</h4>
+                              <ul>
+                                <li>Picadillo de Carne 200 Gr. (2 latas).</li>
+                                <li>Queso Rallado 50 Gr.</li>
+                                <li>Pimienta c/n.</li>
+                                <li>Harina de Trigo “0000” 200 Gr. (floja o todo uso).</li>
+                                <li>Huevo 2 u.</li>
+                                <li>Aceite 1 Cda.</li>
+                                <li>Agua 1 Cda.</li>
+                                <li>Sal 1 Cdita.</li>
+                              </ul>
+                              <h4>Preparación</h4>
+                              <ol>
+                                <li>Vamos a empezar por la masa, en un bowl colocar la harina, los huevos, aceite y la sal disuelta en agua.<br></li>
+                                <li>Integrar todo y colocar sobre una superficie plana para amasarlo hasta lograr un bollo parejo.
+                                  Colocar en el bowl nuevamente, cubrirlo y dejar descansar 30 minutos.<br></li>
+                                <li>Dividir el bollo en dos partes para trabajarla mas fácil, una se cubre con un trapo y la otra se aplasta un poco con las manos colocando harina de ambos lados.<br></li>
+                                <li>Estirar la masa con un palo, siempre cubrir bien la masa con harina para evitar que se pegue.<br></li>  
+                               <li>Hervir en abundante agua con una pizca de sal, luego colocar los cappelletti y cocinar durante unos minutos hasta que flotan.</li>              
+                            </ol>   
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- FIN Modal -->
+            </div>
+            <div class="caja caja6">
+                <div class="tarjeta">
+                    <img class="tarjeta_img1" src="../img/pastas/6arrollado.jpg" alt="Carne1">.
+                    <h4>Lasaña</h4>
+                    <p>Elaborada con pulpo, rape, gambones y calamares, esta receta de lasaña frutti di mare es un plato para un día de fiesta con el que no mirar el reloj mientras estás cocinando y comiendo.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                       Ver Instrucciones.
+                    </button>
+                  </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Instrucciones.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <h4>Ingredientes</h4>
+                            <h5>Para la sopa</h5>
+                            <ul>
+                              <li>Agua.</li>
+                              <li>Carne de puerco y Costilla de puerco. </li>
+                              <li>Maíz para pozole.</li>
+                              <li>Cebolla blanca. </li>
+                              <li>Dientes de ajo. </li>
+                              <li>Sal.</li>
+                            </ul>
+                            <h5>Para la salsa</h5>
+                            <ul>
+                                <li>Chiles anchos.</li>
+                                <li>Chiles guajillo.</li>
+                                <li>Dientes de ajo.</li>
+                                <li>Cebolla mediana.</li>
+                                <li>Aceite vegetal.</li>
+                                <li>Orégano mexicano.</li>
+                                <li>Sal.</li>
+                            </ul>
+                            <h5>Para la Guarnición</h5>
+                            <ul>
+                                <li>Lechuga.</li>
+                                <li>Cebolla blanca.</li>
+                                <li>Rábanos.</li>
+                                <li>Chile piquín.</li>
+                                <li>Orégano mexicano.</li>
+                                <li>Tortillas.</li>
+                                <li>Limones y aguacates.</li>
+                            </ul>
+                            <h4>Preparación</h4>
+                            <ol>
+                                <li>
+                                    Como hacer Pozole Rojo | Instrucciones paso a paso. En una olla con el agua coloca la cebolla, el ajo, la sal, la carne y las costillas y coloca a hervir.<br></li>
+                                <li>Retira la espuma y la grasa mientras se cocina la carne.<br></li>
+                                <li>Cuando la carne este lista retírala del caldo, retira del caldo la grasa, los huesos de las costillas, la cebolla y el ajo.<br></li><br>
+                                <h5>Para la salsa</h5><br>
+                                <li>Agrega todos los ingredientes a tu licuadora y licualos hasta obtener una salsa suave.<br></li>  
+                                <li>Luego calienta el aceite en la sartén; agrega la salsa, y sal al gusto.</li>
+                                <li>Agrega la salsa al caldo, deja hervir y añada la carne. Después de 10 minutos, agrega el maíz y sazona con sal y pimienta.</li>              
+                            </ol>    
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FIN Modal -->
+            </div>
+    <div class="caja caja10"></div><!--Caja sin contenido. INVISIBLE-->
+      </div>
     </main>
 
 
