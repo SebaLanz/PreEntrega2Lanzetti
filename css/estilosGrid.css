@@ -131,3 +131,60 @@ ol > li::marker {
 
 
 /*Fin tarjetas*/
+/*Medias Queries*/
+
+@media screen and (max-width: 1115px){
+
+    .contenedor{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+            "... caja0 caja0 ..."
+            "... caja1 caja2 ..."
+            "... caja4 caja5 ..."
+            "... caja6 caja3 ..."
+            "... caja8 caja7..."
+            "... caja9 caja9 ..."
+            "... caja10 caja10 ... "
+            ;
+         /*margin-top: 25px;*/
+        /*margin-bottom: 350px;*/
+        gap: 40px 20px; /*genero espacio entro las cajas*/
+    }
+
+    .caja img{
+        height: 250px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .contenedor{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+            "... caja0 ..."
+            "... caja1 ..."
+            "... caja2 ..."
+            "... caja3 ..."
+            "... caja4 ..."
+            "... caja5 ..."
+            "... caja6 ..."
+            "... caja7 ..."
+            "... caja8 ..."
+            "... caja9 ..."
+            "... caja10 ..."
+            ;
+         /*margin-top: 25px;*/
+        /*margin-bottom: 350px;*/
+        gap: 40px 20px; /*genero espacio entro las cajas*/
+    }
+}
