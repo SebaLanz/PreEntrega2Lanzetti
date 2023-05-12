@@ -131,6 +131,33 @@ ol > li::marker {
 
 
 /*Fin tarjetas*/
+/*Inicio animaciones - animista.net*/
+/*Animaciones para grids*/
+/*Animación para cajas desde la derecha*/
+.tilt-in-fwd-tr{-webkit-animation:tilt-in-fwd-tr 1s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-tr 1s cubic-bezier(.25,.46,.45,.94) both}
+ @-webkit-keyframes tilt-in-fwd-tr{0%{-webkit-transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-tr{0%{-webkit-transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
+
+
+ /*Animación para cajas de la izquierda*/
+ .tilt-in-fwd-tl{-webkit-animation:tilt-in-fwd-tl 1s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-tl 1s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes tilt-in-fwd-tl{0%{-webkit-transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-tl{0%{-webkit-transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
+ /*FIN Animación para cajas de la izquierda*/
+
+
+ /*Animación para cajas del centro*/
+
+.scale-in-center{-webkit-animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both}
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+
+
+
+
+
+
+
+
+
 /*Medias Queries*/
 
 @media screen and (max-width: 1115px){

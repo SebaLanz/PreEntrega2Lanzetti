@@ -180,6 +180,19 @@ footer{
     grid-area: carta_04;
 }
 
+/*Animaciones - Animista.net*/
+/*Parrafo*/
+.slide-in-tr{-webkit-animation:slide-in-tr 2s cubic-bezier(.25,.46,.45,.94) 1s both;animation:slide-in-tr 2s cubic-bezier(.25,.46,.45,.94) 1s both}
+ @-webkit-keyframes slide-in-tr{0%{-webkit-transform:translateY(-1000px) translateX(1000px);transform:translateY(-1000px) translateX(1000px);opacity:0}100%{-webkit-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0);opacity:1}}@keyframes slide-in-tr{0%{-webkit-transform:translateY(-1000px) translateX(1000px);transform:translateY(-1000px) translateX(1000px);opacity:0}100%{-webkit-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0);opacity:1}}
+ 
+/*Tarjetas -- */
+.slide-in-bck-left{-webkit-animation:slide-in-bck-left 2s cubic-bezier(.25,.46,.45,.94) 1s both;animation:slide-in-bck-left 2s cubic-bezier(.25,.46,.45,.94) 1s both}
+ @-webkit-keyframes slide-in-bck-left{0%{-webkit-transform:translateZ(700px) translateX(-400px);transform:translateZ(700px) translateX(-400px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}@keyframes slide-in-bck-left{0%{-webkit-transform:translateZ(700px) translateX(-400px);transform:translateZ(700px) translateX(-400px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}
+
+
+
+/*Fin animaciones*/
+/*Medias queries*/
 @media only screen and (max-width:900px){
     .logo_pasta{
         display: none;
