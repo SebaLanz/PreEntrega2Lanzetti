@@ -180,13 +180,13 @@ footer{
     grid-area: carta_04;
 }
 
-@media only screen and (max-width:1500px){
+@media only screen and (max-width:900px){
     .logo_pasta{
         display: none;
     }
 
       /*Pastas*/
-      .contenedor_pasta{
+      .contenedor_pasta, .contenido{
         background-color: rgba(255, 255, 255, 0.507);
         width: 100%;
         height: calc(100vh );
@@ -198,6 +198,9 @@ footer{
         margin-top: 10px;
         padding-left: 50px;
         
+    }
+    .contenido{
+        margin-bottom: 80px;
     }
 }
 
@@ -212,6 +215,8 @@ footer{
             "c2"
             "c3";
         margin-left: 140px;
+        gap: 20px 100px ;
+        margin-bottom: 150px;
     }
 
      /*Pastas*/
@@ -251,8 +256,8 @@ footer{
         width: 250px;
     }
 
-}
 
+}
 @media only screen and (max-width:650px){
     .contenido{
         display: grid;
@@ -415,6 +420,9 @@ footer{
     .carta_04{
         padding-bottom: 45px;
     }
+    .espacio{
+        height: 250px;
+    }
     
 }
 
@@ -473,6 +481,9 @@ footer{
     }
     .carta_04{
         padding-bottom: 45px;
+    }
+    .contenido{
+        margin-left: 35px;
     }
 }
 
@@ -534,6 +545,9 @@ footer{
     .carta_04{
         padding-bottom: 45px;
     }
+    .contenido{
+        margin-left: 35px;
+    }
 }
 
 @media only screen and (max-width:400px){
@@ -590,5 +604,9 @@ footer{
     }
     .carta_04{
         padding-bottom: 45px;
+    }
+    .contenido{
+        margin-left: 0px;
+        margin-right: 55px;
     }
 }
