@@ -1,0 +1,250 @@
+@import url(./css/parciales/_reset.scss);
+
+/*Variables Generales*/
+$BGColor: #e27070;
+$colorLetras: white;
+/*Variables Contenido*/
+$imagenFondo: url(../img/postres/postreBG.jpg);
+$borde: 1px solid rgb(201, 200, 200);
+header{
+    background-color: $BGColor;
+    height: 8vh; 
+    nav{
+        align-items: center;
+        height: 100%;
+        padding-left: 15px;
+    }
+        div a {
+            color: $colorLetras;
+            padding-right: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div a:hover{
+            color: #2b2118;
+        }
+}
+/*Fin header*/
+
+/*Inicio main*/
+.contenido{
+    padding: 50px 250px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100vh;
+    background-image: $imagenFondo;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: $borde;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+    grid-template-areas:
+                        
+                        "caja1 ... caja2 ... caja3" 
+                        "caja4 ... caja5 ... caja6"
+                        "caja10 caja10 caja10 caja10 caja10";
+    gap: 20px; /*genero espacio entro las cajas*/
+    .caja{
+        display:flex;
+        justify-content:space-between;
+        width:350px;
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        border-radius:15px;
+        font-family: sans-serif;
+        border-radius: 55px 55px 0 0;
+        height: auto;
+        
+    }
+    
+        .tarjeta{
+            background-color: rgb(255, 255, 255);
+        }
+        .img{
+            width: 100%;
+        }
+        h4{
+        color: rgb(12, 6, 6);
+        font-size: 24px;
+        padding: 10px 10px 0 10px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        }
+        p{
+            padding: 15px 10px 5px 5px;
+            text-align: justify;
+        }
+        img{
+            background-size:auto;  
+            height: 220px;
+            width: 350px;
+            border-radius: 15px 15px 0 0;
+        }
+        button{
+            background-color: #e27070;
+            border: 2px;
+            margin-left: 82px;
+            margin-bottom: 25px;
+            transition: 0.7s;
+        }
+        button:hover{
+            background-color: #88a71681;
+            color: rgb(56, 55, 55);
+            transition: 0.7s;
+        }
+        .caja1{
+            grid-area: caja1;
+        }
+        .caja2{
+            grid-area: caja2;
+        }
+        .caja3{
+            grid-area: caja3;
+        }
+        .caja4{
+            grid-area: caja4;
+        }
+        .caja5{
+            grid-area: caja5;
+
+        }
+        .caja6{
+            grid-area: caja6;
+
+        }
+        .caja10{
+            grid-area: caja10;
+            height: 100px;
+            width: 100%;
+            
+        }
+        // .caja10{
+        //     grid-area: caja10;
+        //     height: 100px;
+        //     border: none;
+        //     box-shadow: none;
+        //     background-color: #2b2118;
+        // }
+}
+/*Convierto los elementos dentro del contenedor en GRID*/
+.contenido > div{
+    display: grid;
+    place-items: center;
+}
+/*FIN BODY GRIDS*/
+
+/*Inicio Tarjetas*/
+.tarjeta{
+    background-color: rgb(255, 255, 255);
+}
+.tarjeta img{
+    width: 100%;
+}
+
+
+/*Fin main*/
+/*Inicio Footer*/
+footer{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: $BGColor;
+    color: $colorLetras;
+    text-align: center;
+    padding-top: 15px;
+    z-index: 1;
+    .caja_footer1{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+        a i{
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.6s;
+        }
+        a i:hover{
+            color: #7569df;
+            transition: 0.6s;
+        }
+}
+
+.tilt-in-fwd-tr{-webkit-animation:tilt-in-fwd-tr 1s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-tr 1s cubic-bezier(.25,.46,.45,.94) both}
+ @-webkit-keyframes tilt-in-fwd-tr{0%{-webkit-transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-tr{0%{-webkit-transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);transform:rotateY(20deg) rotateX(35deg) translate(300px,-300px) skew(-35deg,10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
+
+
+ /*Animación para cajas de la izquierda*/
+ .tilt-in-fwd-tl{-webkit-animation:tilt-in-fwd-tl 1s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-tl 1s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes tilt-in-fwd-tl{0%{-webkit-transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-tl{0%{-webkit-transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
+ /*FIN Animación para cajas de la izquierda*/
+
+
+ /*Animación para cajas del centro*/
+
+.scale-in-center{-webkit-animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both}
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+ @media screen and (max-width: 1350px){
+
+    .contenido{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "... caja0 caja0 ..."
+            "... caja1 caja2 ..."
+            "... caja3 caja4 ..."
+            "... caja5 caja6 ..."
+            "... caja10 caja10 ... "
+            ;
+         /*margin-top: 25px;*/
+        /*margin-bottom: 350px;*/
+        gap: 25px; /*genero espacio entro las cajas*/
+        padding: 0;
+        
+    }
+
+
+}
+
+
+
+ @media screen and (max-width: 768px){
+
+    .contenido{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+            "... caja0 ..."
+            "... caja1 ..."
+            "... caja2 ..."
+            "... caja3 ..."
+            "... caja4 ..."
+            "... caja5 ..."
+            "... caja6 ..."
+            "... caja7 ..."
+            "... caja8 ..."
+            "... caja9 ..."
+            "... caja10 ..."
+            ;
+        
+        background-color: white;
+        
+        gap: 10px; /*genero espacio entro las cajas*/
+        padding: 10px;
+    }
+}
